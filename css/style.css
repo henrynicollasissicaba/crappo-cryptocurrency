@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+/* Set core body defaults */
+body {
+    text-rendering: optimizeSpeed;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+:root{
+    
+    /* FONTS */
+    --ff-default: 'Rubik', sans-serif;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-700: 700;
+
+    --clr-font: var(--main-bg);
+
+    --fs-16: 1rem;
+    --fs-18: 1.125rem;
+    --fs-20: 1.25rem;
+    --fs-32: 2rem;
+    --fs-40: 2.5rem;
+    --fs-64: 4rem;
+
+    /* COLORS */
+    --main-bg: #0D0D2B;
+    --clr-accent-100: #ffffff;
+    --clr-accent-400: #3671E9;
+    --clr-accent-600: #2B076E;
+
+    --clr-neutral-100: #F9FAFD;
+    --clr-neutral-200: #E0E0E0;
+    --clr-neutral-400: #828282;
+
+    --clr-linear: linear-gradient(#2B076E, #0D0D2B);
+}
+
+body{
+    font-family: var(--ff-default);
+}
+
+header, 
+section,
+footer{
+    background: var(--main-bg);
+    color: var(--clr-accent-100);
+}
+
+.container{
+    --max-width: 1110px;
+    --padding: 1rem;
+
+    width: min(var(--max-width), 100% - var(--padding) * 2);
+    margin-inline: auto;
+}
+
+.columns{
+    display: grid;
+    gap: 1rem;
+}
+
+.padding-block{
+    padding-block: 3rem;
+}
+
+.nav-list{
+    display: none;
+}
+
+@media(min-width: 50em){
+    .columns{
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
+}
