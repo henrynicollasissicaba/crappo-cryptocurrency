@@ -7,17 +7,16 @@
     <title>CRAPPO - Cryptocurrency</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="shortcut icon" href="./imgs/logo-fav.svg" type="image/x-icon" />
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer ></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" defer ></script>
   </head>
 
   <body>
-
     <!-- MAIN SECTION STARTS -->
 
     <header class="padding-block">
       <div class="container">
-        <div class="columns">
+        <div class="columns header">
           <div>
             <img src="./imgs/logo.svg" alt="" />
           </div>
@@ -28,7 +27,7 @@
               <li><a href="#">About</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
-            <button class="btn">Register</button>
+            <button class="btn" aria-setsize="small">Register</button>
           </div>
         </div>
       </div>
@@ -38,15 +37,18 @@
       <section class="padding-block">
         <div class="container">
           <div class="columns">
-            <div>
-              <h1>Fastest & secure platform to invest in crypto</h1>
-              <p>
+            <div class="flex-group">
+              <h1 class="primary-title">Fastest & secure platform to invest in crypto</h1>
+              <p class="subtitle" aria-setsize="mx-width">
                 Buy and sell cryptocurrencies, trusted by 10M wallets with over
                 $30 billion in transactions.
               </p>
               <button class="btn" data-type="different">
                 Try for FREE
-                <img src="./imgs/arrow-right.svg" alt="" data-type="inverted">
+                <svg  class="arrow" width="64" height="64" viewBox="0 0 64 64" fill="white" xmlns="http://www.w3.org/2000/svg" >
+                  <circle cx="32" cy="32" r="31" stroke="transparent" stroke-opacity="0.2" stroke-width="2" />
+                  <path d="M28.9999 42.0002C28.7367 42.0017 28.4758 41.9512 28.2321 41.8517C27.9885 41.7522 27.7668 41.6055 27.5799 41.4202C27.3925 41.2342 27.2437 41.013 27.1422 40.7693C27.0406 40.5256 26.9883 40.2642 26.9883 40.0002C26.9883 39.7362 27.0406 39.4747 27.1422 39.231C27.2437 38.9873 27.3925 38.7661 27.5799 38.5802L34.1999 32.0002L27.8399 25.3802C27.4674 25.0054 27.2584 24.4985 27.2584 23.9702C27.2584 23.4418 27.4674 22.9349 27.8399 22.5602C28.0259 22.3727 28.2471 22.2239 28.4908 22.1224C28.7345 22.0209 28.9959 21.9686 29.2599 21.9686C29.524 21.9686 29.7854 22.0209 30.0291 22.1224C30.2728 22.2239 30.494 22.3727 30.6799 22.5602L38.3999 30.5602C38.7664 30.934 38.9717 31.4367 38.9717 31.9602C38.9717 32.4837 38.7664 32.9863 38.3999 33.3602L30.3999 41.3602C30.2204 41.554 30.0043 41.7104 29.764 41.8203C29.5237 41.9301 29.264 41.9913 28.9999 42.0002Z" fill="#3671E9" />
+                </svg>
               </button>
             </div>
             <div>
@@ -58,26 +60,26 @@
 
       <section class="padding-block">
         <div class="container">
-          <div class="columns" data-attribute="column-center">
-            <div>
+          <div class="columns" aria-setsize="centered">
+            <div class="row-flex">
               <img src="./imgs/icon-1.svg" alt="" />
               <div>
-                <h2>$30B</h2>
-                <p>Digital Currency Exchanged</p>
+                <h2 class="second-title">$30B</h2>
+                <p class="subtitle">Digital Currency Exchanged</p>
               </div>
             </div>
-            <div>
+            <div class="row-flex">
               <img src="./imgs/icon-2.svg" alt="" />
               <div>
-                <h2>10M+</h2>
-                <p>Trusted Wallets Investor</p>
+                <h2 class="second-title">10M+</h2>
+                <p class="subtitle">Trusted Wallets Investor</p>
               </div>
             </div>
-            <div>
+            <div class="row-flex">
               <img src="./imgs/icon-3.svg" alt="" />
               <div>
-                <h2>195</h2>
-                <p>Countries Supported</p>
+                <h2 class="second-title">195</h2>
+                <p class="subtitle">Countries Supported</p>
               </div>
             </div>
           </div>
@@ -90,9 +92,9 @@
             <div>
               <img src="./imgs/Illustrations-2.svg" alt="" />
             </div>
-            <div>
-              <h1>Why you should choose CRAPPO</h1>
-              <p>
+            <div class="flex-group">
+              <h1 class="second-title">Why you should choose CRAPPO</h1>
+              <p class="subtitle" aria-setsize="mx-width">
                 Experience the next generation cryptocurrency platform. No
                 financial borders, extra fees, and fake reviews.
               </p>
@@ -103,37 +105,39 @@
       </section>
 
       <section class="padding-block">
-        <div>
-          <h2>Check how much you can earn</h2>
-          <p>
-            Let's check your hash rate to see how much you will earn today,
-            Exercitation veniam consequat sunt nostrud amet.
-          </p>
+        <div class="container">
+          <div class="centered flex-gap">
+            <h2 class="second-title" aria-setsize="mx-width">Check how much you can earn</h2>
+            <p class="subtitle" aria-setsize="mx-width">
+              Let's check your hash rate to see how much you will earn today,
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
         </div>
       </section>
 
       <article class="padding-block">
         <div class="container">
-          <div class="columns">
-            <div>
-              <input type="text" name="" id="" placeholder="Enter your hash rate">
+            <div class="middle-card">
+              <div>
+                <input type="text" name="" id="" placeholder="Enter your hash rate" />
+              </div>
+              <div>
+                <select name="" id="">
+                  <option value="">TH/s</option>
+                </select>
+              </div>
+              <div>
+                <button class="btn" set-attribute="small">Calculate</button>
+              </div>
+              <div>
+               <h3>ESTIMATED 24 HOUR REVENUE:</h3>
+               <h1>0.055 130 59 ETH ($1275)</h1>
+               <p>
+                 Revenue will change based on mining difficulty and Ethereum price.
+               </p>
+              </div>
             </div>
-            <div>
-              <select name="" id="">
-                <option value="">TH/s</option>
-              </select>
-            </div>
-            <div>
-              <button class="btn">Calculate</button>
-            </div>
-          </div>
-          <div>
-            <h3>ESTIMATED 24 HOUR REVENUE:</h3>
-            <h1>0.055 130 59 ETH ($1275)</h1>
-            <p>
-              Revenue will change based on mining difficulty and Ethereum price.
-            </p>
-          </div>
         </div>
       </article>
 
@@ -150,9 +154,12 @@
                 Digital currency in which a record of transactions is
                 maintained.
               </p>
-              <button class="btn">
+              <button class="btn" data-type="different">
                 Start mining
-                <img src="./imgs/arrow-right.svg" alt="" />
+                <svg class="arrow" width="64" height="64" viewBox="0 0 64 64" fill="white" xmlns="http://www.w3.org/2000/svg" >
+                  <circle cx="32" cy="32" r="31" stroke="transparent" stroke-opacity="0.2" stroke-width="2" />
+                  <path d="M28.9999 42.0002C28.7367 42.0017 28.4758 41.9512 28.2321 41.8517C27.9885 41.7522 27.7668 41.6055 27.5799 41.4202C27.3925 41.2342 27.2437 41.013 27.1422 40.7693C27.0406 40.5256 26.9883 40.2642 26.9883 40.0002C26.9883 39.7362 27.0406 39.4747 27.1422 39.231C27.2437 38.9873 27.3925 38.7661 27.5799 38.5802L34.1999 32.0002L27.8399 25.3802C27.4674 25.0054 27.2584 24.4985 27.2584 23.9702C27.2584 23.4418 27.4674 22.9349 27.8399 22.5602C28.0259 22.3727 28.2471 22.2239 28.4908 22.1224C28.7345 22.0209 28.9959 21.9686 29.2599 21.9686C29.524 21.9686 29.7854 22.0209 30.0291 22.1224C30.2728 22.2239 30.494 22.3727 30.6799 22.5602L38.3999 30.5602C38.7664 30.934 38.9717 31.4367 38.9717 31.9602C38.9717 32.4837 38.7664 32.9863 38.3999 33.3602L30.3999 41.3602C30.2204 41.554 30.0043 41.7104 29.764 41.8203C29.5237 41.9301 29.264 41.9913 28.9999 42.0002Z" fill="#3671E9" />
+                </svg>
               </button>
             </div>
             <div>
@@ -162,9 +169,12 @@
                 Blockchain technology to create and run decentralized digital
                 applications.
               </p>
-              <button class="btn">
-                <img src="./imgs/arrow-right.svg" alt="" />
-              </button>
+              <a href="#" class="arrow" aria-setsize="large">
+                <svg width="64" height="64" viewBox="0 0 64 64" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="32" cy="32" r="31" stroke="#828282" stroke-opacity="0.2" stroke-width="2" />
+                  <path d="M28.9999 42.0002C28.7367 42.0017 28.4758 41.9512 28.2321 41.8517C27.9885 41.7522 27.7668 41.6055 27.5799 41.4202C27.3925 41.2342 27.2437 41.013 27.1422 40.7693C27.0406 40.5256 26.9883 40.2642 26.9883 40.0002C26.9883 39.7362 27.0406 39.4747 27.1422 39.231C27.2437 38.9873 27.3925 38.7661 27.5799 38.5802L34.1999 32.0002L27.8399 25.3802C27.4674 25.0054 27.2584 24.4985 27.2584 23.9702C27.2584 23.4418 27.4674 22.9349 27.8399 22.5602C28.0259 22.3727 28.2471 22.2239 28.4908 22.1224C28.7345 22.0209 28.9959 21.9686 29.2599 21.9686C29.524 21.9686 29.7854 22.0209 30.0291 22.1224C30.2728 22.2239 30.494 22.3727 30.6799 22.5602L38.3999 30.5602C38.7664 30.934 38.9717 31.4367 38.9717 31.9602C38.9717 32.4837 38.7664 32.9863 38.3999 33.3602L30.3999 41.3602C30.2204 41.554 30.0043 41.7104 29.764 41.8203C29.5237 41.9301 29.264 41.9913 28.9999 42.0002Z" fill="#3671E9" />
+                </svg>
+              </a>
             </div>
             <div>
               <img src="./imgs/icon-6.svg" alt="" />
@@ -173,9 +183,12 @@
                 Cryptocurrency that enables instant payments to anyone in the
                 world.
               </p>
-              <button class="btn">
-                <img src="./imgs/arrow-right.svg" alt="" />
-              </button>
+              <a href="#" class="arrow" aria-setsize="large">
+                <svg width="64" height="64" viewBox="0 0 64 64" fill="transparent" xmlns="http://www.w3.org/2000/svg" >
+                  <circle cx="32" cy="32" r="31" stroke="#828282" stroke-opacity="0.2" stroke-width="2" />
+                  <path d="M28.9999 42.0002C28.7367 42.0017 28.4758 41.9512 28.2321 41.8517C27.9885 41.7522 27.7668 41.6055 27.5799 41.4202C27.3925 41.2342 27.2437 41.013 27.1422 40.7693C27.0406 40.5256 26.9883 40.2642 26.9883 40.0002C26.9883 39.7362 27.0406 39.4747 27.1422 39.231C27.2437 38.9873 27.3925 38.7661 27.5799 38.5802L34.1999 32.0002L27.8399 25.3802C27.4674 25.0054 27.2584 24.4985 27.2584 23.9702C27.2584 23.4418 27.4674 22.9349 27.8399 22.5602C28.0259 22.3727 28.2471 22.2239 28.4908 22.1224C28.7345 22.0209 28.9959 21.9686 29.2599 21.9686C29.524 21.9686 29.7854 22.0209 30.0291 22.1224C30.2728 22.2239 30.494 22.3727 30.6799 22.5602L38.3999 30.5602C38.7664 30.934 38.9717 31.4367 38.9717 31.9602C38.9717 32.4837 38.7664 32.9863 38.3999 33.3602L30.3999 41.3602C30.2204 41.554 30.0043 41.7104 29.764 41.8203C29.5237 41.9301 29.264 41.9913 28.9999 42.0002Z" fill="#3671E9" />
+                </svg>
+              </a>
             </div>
           </div>
         </div>
@@ -239,10 +252,10 @@
               <p></p>
             </div>
             <div>
-              <input type="email" name="" id="" placeholder="Enter your email">
+               type="emai nam i placeholder="Enter your emai />
             </div>
             <div>
-              <button class="btn">Subscribe</button>
+              <button class="btn" data-attribute="reverse">Subscribe</button>
             </div>
           </div>
         </div>
@@ -254,54 +267,53 @@
     <!-- FOOTER SECTION STARTS -->
 
     <footer class="padding-block">
-        <div class="container">
-            <div class="columns">
-                <div>
-                    <img src="./imgs/logo.svg" alt="">
-                </div>
-                <div>
-                    <h3>Quick Link</h3>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Resources</h3>
-                    <ul>
-                        <li><a href="#">Download Whitepapper</a></li>
-                        <li><a href="#">Smart Token</a></li>
-                        <li><a href="#">Blockchain Explorer</a></li>
-                        <li><a href="#">Crypto API</a></li>
-                        <li><a href="#">Interest</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h1>We accept following payment systems</h1>
-                    <div>
-                        <img src="./imgs/Visa.svg" alt="">
-                        <img src="./imgs/Mastercard.svg" alt="">
-                        <img src="./imgs/Bitcoin.svg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <p>©2021 CRAPPO. All rights reserved</p>
+      <div class="container">
+        <div class="columns">
+          <div>
+            <img src="./imgs/logo.svg" alt="" />
+          </div>
+          <div>
+            <h3>Quick Link</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Download Whitepapper</a></li>
+              <li><a href="#">Smart Token</a></li>
+              <li><a href="#">Blockchain Explorer</a></li>
+              <li><a href="#">Crypto API</a></li>
+              <li><a href="#">Interest</a></li>
+            </ul>
+          </div>
+          <div>
+            <h1>We accept following payment systems</h1>
             <div>
-                <ion-icon name="logo-facebook"></ion-icon>
-                <ion-icon name="logo-instagram"></ion-icon>
-                <ion-icon name="logo-youtube"></ion-icon>
-                <ion-icon name="logo-twitter"></ion-icon>
-                <ion-icon name="logo-linkedin"></ion-icon>
+              <img src="./imgs/Visa.svg" alt="" />
+              <img src="./imgs/Mastercard.svg" alt="" />
+              <img src="./imgs/Bitcoin.svg" alt="" />
             </div>
+          </div>
         </div>
+      </div>
+      <div class="container">
+        <p>©2021 CRAPPO. All rights reserved</p>
+        <div>
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-instagram"></ion-icon>
+          <ion-icon name="logo-youtube"></ion-icon>
+          <ion-icon name="logo-twitter"></ion-icon>
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </div>
+      </div>
     </footer>
 
     <!-- FOOTER SECTION ENDS -->
-
   </body>
 </html>

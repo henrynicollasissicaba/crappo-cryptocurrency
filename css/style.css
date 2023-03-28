@@ -75,11 +75,14 @@ svg {
 
     --clr-font: var(--main-bg);
 
+    --fs-14: 0.875rem;
     --fs-16: 1rem;
     --fs-18: 1.125rem;
     --fs-20: 1.25rem;
+    --fs-24: 1.5rem;
     --fs-32: 2rem;
     --fs-40: 2.5rem;
+    --fs-48: 3rem;
     --fs-64: 4rem;
 
     /* COLORS */
@@ -116,7 +119,7 @@ footer{
 
 .columns{
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .padding-block{
@@ -127,9 +130,131 @@ footer{
     display: none;
 }
 
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn{
+    --width-arrow: var(--fs-24);
+    --arrow-larger: var(--fs-40);
+
+    cursor: pointer;
+    color: var(--clr-accent-100);
+    background: var(--clr-accent-400);
+    border: 0;
+    border-radius: var(--fs-32);
+    padding: var(--fs-14) var(--fs-32);
+    font-weight: var(--fw-500);
+    font-size: var(--fs-18);
+}
+
+.btn[aria-setsize="small"]{
+    font-size: var(--fs-16);
+}
+
+.btn[data-attribute="reverse"]{
+    color: var(--clr-font);
+    background: var(--clr-accent-100);
+}
+
+.btn[data-attribute="invisible"]{
+    background: none;
+}
+
+.btn[data-type="different"]{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+.btn .arrow{
+    width: var(--width-arrow);
+    aspect-ratio: 1;
+}
+
+.btn .arrow[aria-setsize="large"]{
+    width: var(--arrow-large);
+}
+
+.btn[set-attribute="small"]{
+    width: 90px;
+    height: 25px;
+    font-size: var(--fs-14);
+    padding: 0;
+}
+
+.primary-title{
+    font-size: var(--fs-48);
+    font-weight: var(--fw-700);
+}
+
+.second-title{
+    font-size: var(--fs-32);
+    font-weight: var(--fw-700);
+}
+
+.subtitle{
+    font-size: var(--fs-16);
+    font-weight: var(--fw-400);
+    color: var(--clr-neutral-200);
+}
+
+.subtitle[aria-setsize="mx-width"]{
+    max-width: 360px;
+}
+
+.flex-group{
+    display: flex;
+    flex-direction: column;
+    gap: var(--fs-32);
+    align-items: center;
+}
+
+.flex-gap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.row-flex{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.centered{
+    text-align: center;
+}
+
+.middle-card{
+    max-width: 800px;
+    margin-inline: auto;
+}
+
 @media(min-width: 50em){
     .columns{
         grid-auto-flow: column;
         grid-auto-columns: 1fr;
+    }
+
+    .columns[aria-setsize="centered"]{
+        place-items: center;
+    }    
+
+    .primary-title{
+        font-size: var(--fs-64);
+    }
+
+    .second-title{
+        font-size: var(--fs-40);
+        font-weight: var(--fw-700);
+    }
+
+    .flex-group{
+        align-items: flex-start;
     }
 }
