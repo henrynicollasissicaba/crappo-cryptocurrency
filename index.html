@@ -16,19 +16,19 @@
 
     <header class="padding-block">
       <div class="container">
-        <div class="columns header">
+        <div class="header">
           <div>
             <img src="./imgs/logo.svg" alt="" />
           </div>
           <div>
-            <ul class="nav-list">
+            <ul class="nav-list" role='list'>
               <li><a href="#">Products</a></li>
               <li><a href="#">Features</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
-            <button class="btn" aria-setsize="small">Register</button>
           </div>
+          <button class="btn" aria-setsize="small">Register</button>
         </div>
       </div>
     </header>
@@ -200,7 +200,7 @@
 
       <article class="padding-block | bg-400">
         <div class="centered">
-          <h2 class="second-title padding-block | clr-100">
+          <h2 class="title-data | clr-100 second-title padding-block">
             Market sentiments, portfolio, and run the infrastructure of your
             choice
           </h2>
@@ -238,7 +238,7 @@
           </div>
           <div class="columns">
             <div class="flex-items">
-              <h3 class="second-title clr-100">Grow your profit and track your investments</h3>
+              <h3 class="second-title clr-100" aria-setsize="mx-width">Grow your profit and track your investments</h3>
               <p class="subtitle" aria-setsize="mx-width">
                 Use advanced analytical tools. Clear TradingView charts let you
                 track current and historical profit investments.
@@ -256,12 +256,12 @@
 
       <article class="padding-block">
         <div class="container">
-          <div class="columns">
+          <div class="start">
             <div>
-              <h2>Start mining now</h2>
+              <h2 class="second-title">Start mining now</h2>
               <p>Join now with CRAPPO to get the latest news and start mining now</p>
             </div>
-            <div>
+            <div class="mail">
                <input type="email" name="" id="" placeholder="Enter your email">
             </div>
             <div>
@@ -282,9 +282,9 @@
           <div>
             <img src="./imgs/logo.svg" alt="" />
           </div>
-          <div>
+          <div class="footer-nav">
             <h3>Quick Link</h3>
-            <ul>
+            <ul role='list'>
               <li><a href="#">Home</a></li>
               <li><a href="#">Products</a></li>
               <li><a href="#">About</a></li>
@@ -292,9 +292,9 @@
               <li><a href="#">Contact</a></li>
             </ul>
           </div>
-          <div>
+          <div class="footer-nav">
             <h3>Resources</h3>
-            <ul>
+            <ul role='list'>
               <li><a href="#">Download Whitepapper</a></li>
               <li><a href="#">Smart Token</a></li>
               <li><a href="#">Blockchain Explorer</a></li>
@@ -302,24 +302,28 @@
               <li><a href="#">Interest</a></li>
             </ul>
           </div>
-          <div>
-            <h1>We accept following payment systems</h1>
-            <div>
+          <div class="footer-nav">
+            <h3>We accept following payment systems</h1>
+            <div class="img-footer">
               <img src="./imgs/Visa.svg" alt="" />
               <img src="./imgs/Mastercard.svg" alt="" />
               <img src="./imgs/Bitcoin.svg" alt="" />
             </div>
           </div>
         </div>
-      </div>
-      <div class="container">
-        <p>©2021 CRAPPO. All rights reserved</p>
-        <div>
-          <ion-icon name="logo-facebook"></ion-icon>
-          <ion-icon name="logo-instagram"></ion-icon>
-          <ion-icon name="logo-youtube"></ion-icon>
-          <ion-icon name="logo-twitter"></ion-icon>
-          <ion-icon name="logo-linkedin"></ion-icon>
+        <div class="footer-social">
+          <p>©2021 CRAPPO. All rights reserved</p>
+          <div>
+            <ion-icon name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-youtube"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </div>
+        </div>
+        <div class="coded">
+          <p>Design inspired by <a href="https://dribbble.com/shots/15067925-CRAPPO-Cryptocurrency-Website-Freebie" target="_blank">Rizki Mulyawan.</a></p>
+          <p>Coded by <a href="https://github.com/henrynicollasissicaba" target="_blank">Henry Nicollas Issicaba Neves.</a></p>
         </div>
       </div>
     </footer>
