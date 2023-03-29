@@ -92,7 +92,8 @@ svg {
     --clr-accent-600: #2B076E;
 
     --clr-neutral-100: #F9FAFD;
-    --clr-neutral-200: #E0E0E0;
+    --clr-neutral-200: #FBFCFE;
+    --clr-neutral-300: #E0E0E0;
     --clr-neutral-400: #828282;
 
     --clr-linear: linear-gradient(#2B076E, #0D0D2B);
@@ -230,9 +231,12 @@ footer{
     text-align: center;
 }
 
-.middle-card{
-    max-width: 800px;
-    margin-inline: auto;
+.card-prev .container > div{
+    padding-bottom: 10rem;
+}
+
+.bg-neutral-gray{
+    background: F9FAFD;
 }
 
 @media(min-width: 50em){
